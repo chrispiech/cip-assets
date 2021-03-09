@@ -1,24 +1,5 @@
 _Is your code not working? That is very normal, especially when you are first starting. Keep at it! You can work through any of the challenges you face on this "assignment"._
 
-## General
-
-Have questions related to assignment 0 in general? Look for them here!
-
-#### "Learn Karel Basics" is not marked as complete
-
-The step that consists of reading Chapters 1-5 doesn't get marked as complete with a green tick like the other steps. Feel free to read at your own pace and move on from this step when you finish the chapters.
-
-#### I can't access my account anymore, or it's blank!
-
-1. Navigate to the [Code In Place homepage](https://codeinplace.stanford.edu), reopen the application form, and try to sign in again.
-2. Are you using a phone? Try logging in from a computer instead?
-3. Try out any other email you might have signed up with.
-4. Try both the "Sign in with email" and the "Sign in with Google" buttons. Depending on whether you originally selected "Sign in with email" or "Sign in with Google", there are some cases where trying to login with the opposite method will cause problems.
-5. If all else fails: send us an email with screenshots/details about your problem. We'll do everything we can to make sure you don't lose any progress.
-
-#### Have you received my application?
-
-Sign into your student application and look for the green status bar at the top of the application. If it says "Application complete! You finished...", then we have successfully received your application! If your application isn't complete, that status bar will show what your next steps are.
 
 ## Understanding Typos
 
