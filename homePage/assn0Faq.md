@@ -1,8 +1,6 @@
 _Is your code not working? That is very normal, especially when you are first starting. Keep at it! You can work through any of the challenges you face on this "assignment"._
 
 
-## Understanding Typos
-
 Reading error messages for typos is a skill that is worth learning but takes some practice. Here is a translation of some of the common ones and what they could mean.
 
 #### `Expected a body definition`
@@ -42,15 +40,13 @@ def main():
 
 In Karel, all commands must be declared inside a function! Do you have a `main` function?
 
-## Shelter-in-place
+#### Shelter-in-place is not being marked as complete.
 
-#### It's not being marked as complete.
 
 Whenever a Karel program isn't being marked as complete when you think it should be, immediately see if any error messages are popping up below the Karel window. If this is the case, check out the "Understanding Typos" section.
 
 If it isn't an error message, reread the exercise requirements. A common mistake with "Shelter-in-place" is returning the beeper to the starting point instead of just returning Karel to its starting point. To clarify- we don't want any beepers present in the world after our code runs for this problem.
 
-## Piles
 
 #### My `for` loop won't stop
 
