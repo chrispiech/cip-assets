@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head><script>
+  document.write(
+    '<script src="http://' +
+    (location.host || 'localhost').split(':')[0] +
+    ':35729/livereload.js?snipver=1&amp;port=35729"' +
+    '></' +
+    'script>');
+</script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="/_assets/style/site.css" rel="stylesheet">
+    <link href="/_assets/img/favicon.png" rel="icon" type="image/png">
+    <script src="https://kit.fontawesome.com/9006c49789.js" crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <title>CS107E Teaching Demo for Section Leader Application</title>
+  </head>
+
+  <!-- fill to height of viewport, flex col, footer will be mt-auto -->
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="top navbar navbar-expand-md navbar-dark" role="navigation">
+  <img class="navbar-brand navbar-brand-image" src="/_assets/img/berry.png">
+  <a class="navbar-brand" href="/"> CS107e Winter 2021 </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assignments/">Assignments</a></li>
+          <li class="nav-item"><a class="nav-link" href="/labs/">Labs</a></li>
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false"> Resources </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/about/">About the course</a>
+            <a class="dropdown-item" href="/policies/">Policies</a>
+            <a class="dropdown-item" href="/guides/">Guides</a>
+            <a class="dropdown-item" href="/project_gallery/">Project Gallery</a>
+            <a class="dropdown-item" href="/demos/">External demos</a>
+            <a class="dropdown-item" href="/resources/">External resources</a>
+          </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/schedule/">🗓Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="/search/">🔍Search</a></li>
+    </ul>
+    <!---
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" id="search-text" name="query" placeholder="🔍 Search CS106B..." aria-label="Search" action="search">
+    </form>
+    --->
+  </div>
+</nav>
+
+<style>
+  .top.navbar {
+    margin-bottom: 2rem;
+  }
+  .top.navbar-dark {
+    background-color: #060;
+  }
+  .top .nav-item > a {
+    color: #ccc !important;
+  }
+  .top .nav-item > a:hover {
+    color: white !important;
+  }
+  .top .navbar-brand-image {
+    padding: 2px !important;
+    width: 2rem;
+  }
+
+</style>
+    <main class="main container-fluid" role="main"><div class="body-container container-fluid" data-spy="scroll" data-target="#toc">
+
+<h1 class="title">Teaching Demo for Section Leader Application</h1>
+<hr>
+
+
+
+<div id="content">
+<h1 id="teaching-demo-for-section-leader-application">Teaching Demo for Section Leader Application</h1>
+<h3 id="code-in-place-2021">Code In Place 2021</h3>
+<hr>
+
+<p>As part of your application, you are to prepare short informal video which showcases your teaching. The video should be <strong>5 minutes long</strong> (we allow 1 minute of grace, up to total of 6 minutes). We don't want you to spend too long making this video, certainly no longer than an hour. Recall that you are not competing against others. Instead you are demonstrating that you are ready to teach! Here is a <a href="https://drive.google.com/file/d/1BsO8Itwfs1J1l7vHcOtjaljrX9hUjqIj/view?usp=sharing" target="_blank" rel="noopener noreferrer">sample teach video</a> (for a different problem) to give you inspiration.</p>
+
+<h2 id="mars-weight-prompt">Mars Weight prompt</h2>
+<p>The problem you are to teach in the demo is <strong>Mars Weight</strong>. Here is the prompt that is given to the student:</p>
+
+<p><em>An earthling's weight on Mars is 37.8% of their weight on earth. Write a Python program that prompts the user (an earthling) to enter their weight on earth and prints the calculated weight of the earthling on Mars .</em></p>
+
+<h3 id="solution">Solution</h3>
+<p>Here is a sample run of the program</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>python marsweight.py
+<span class="go">Enter a weight on earth: 120
+The equivalent weight on Mars: 45.36
+</span></code></pre></div></div>
+
+<p>And here is a sample solution</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># File: marsweight.py
+</span>
+<span class="c1"># we use constants!
+</span><span class="n">MARS_MULTIPLE</span> <span class="o">=</span> <span class="mf">0.378</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+        <span class="c1"># technically weight is measured in newtons, but one of your
+</span>        <span class="c1"># goals is to focus on the python, not the physics!
+</span>    <span class="n">earth_weight_str</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Enter a weight on earth: '</span><span class="p">)</span>
+
+        <span class="c1"># input() returns a value in string form, get the number out
+</span>    <span class="n">earth_weight</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">earth_weight_str</span><span class="p">)</span>
+
+        <span class="c1"># more variables is good times when first learning
+</span>    <span class="n">mars_weight</span> <span class="o">=</span> <span class="n">earth_weight</span> <span class="o">*</span> <span class="n">MARS_MULTIPLE</span>
+
+        <span class="c1"># note the string concatenation!
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">'The equivalent weight on Mars: '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">mars_weight</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+
+</code></pre></div></div>
+<h2 id="learning-objectives">Learning objectives</h2>
+<p>The learning objectives for the Mars Weight problem are for students to understand:</p>
+<ol>
+  <li>That each variable has a type</li>
+  <li>The difference between assigning variables and using variables</li>
+  <li>How to "cast" between types</li>
+</ol>
+
+<p>You can't teach all of that in 5 minutes. Choose something to focus on. The Mars weight is your motivation! And motivation is really important. But the point of the problem is not physics.</p>
+
+<h2 id="your-students">Your students</h2>
+<p>In the Code In Place course, you will teach a section live with students. When recording your teaching demo there will be no live students (obviously) but to the best of your ability, teach as if there were a live audience (though you do not need to interact with this fake audience).</p>
+
+<p>Assume that your students have attended live lecture and have been introduced to the relevant concepts (constants, variables, input and print, variable types and casting). Assume that this is the third program that they have seen which uses variables. Their understanding is still pretty new!</p>
+
+<p>You can assume that students find variables and variable types <strong>difficult</strong>, and they find input, print, constants to be <strong>easy</strong>.</p>
+
+<p>Students have been given the metaphor that a variable is like a teeny box in your computer where you can store stuff. We will have emphasized that every variable has (1) a name, (2) a type, and (3) a value.</p>
+
+<h2 id="lesson-plan">Lesson plan</h2>
+<p>You can use your 5-minutes any way you like. Here is a sample minute-by-minute breakdown you might adopt:</p>
+
+<ul>
+  <li>1 min: Give a brief recap of variables (1-3 sentences), and explain the problem. Make it sound fun. While you should imagine that you are teaching a class of students, don't feel the need to address them or ask them questions.</li>
+  <li>3 mins: Type up a solution in an IDE/text editor of choice, explaining the code as you write, and showing how to test the program (see the sample teach for an example of this)</li>
+  <li>1 min: Re-cap and summarize</li>
+</ul>
+
+<p>When showing code to students, you can program in your choice of tool/IDE. Our students use PyCharm, but Sublime, VSCode, Anaconda, … wherever you are comfortable is fine. The comments we have put in place in our solution are there for your benefit. During your teach, feel free to comment or not comment your code as it feels appropriate!</p>
+
+<h2 id="how-we-will-evaluate-your-video">How we will evaluate your video</h2>
+<p>We are looking for people who know their content knowledge and who are able to communicate and motivate well. We value quality over quantity, so don't feel pressured to rush through everything. Instead, make sure the content you cover is clear and easy to follow.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>Here are our recommendations for handling the recording logistics.</p>
+
+<ul>
+  <li>
+    <p><strong>Recording</strong></p>
+
+    <p>You can record your demo lesson using whatever tools you have available: webcam, screen capture, smart phone, etc. One option is to record using Zoom (instructions below).</p>
+
+    <p>Don't fuss about production quality! We are more interested in who you are than the quality of your audio :-). However you record, it should be a "single take" and you shouldn't do any post-production.</p>
+  </li>
+  <li>
+    <p><strong>Length of the video</strong></p>
+
+    <p>We ask for a video of 5 minutes. We will allow for brief (~1 minute) grace period to finish up your recording, but anything longer than 6 minutes is too long! You don't have to conclude nicely – feel free to cut the video at 6 minutes, even if you aren't quite done. Do not feel the need to overproduce your video! We are trying to scale here, I hope you understand :-)</p>
+  </li>
+  <li>
+    <p><strong>Uploading the video</strong></p>
+
+    <p>After completing your recording, save the video file. You will upload this file when completing the Section Leader application form.</p>
+  </li>
+  <li>
+    <p><strong>Using Zoom to record (optional)</strong></p>
+
+    <p>Here are instructions for using Zoom to make your recording. (You do not need to use Zoom, it is just an option)</p>
+
+    <ul>
+      <li>Open Zoom and press "New Meeting" (or "Host a Meeting").</li>
+      <li>Make sure your microphone is unmuted and your video is on.</li>
+      <li>Zoom has a variety of teaching tools you can take advantage of (though none are required). Press the "Share Screen" button and select one of the following:
+        <ul>
+          <li>Choose your IDE window to show writing code</li>
+          <li>Choose "Whiteboard" to use the built-in whiteboard feature. Feel free to record an actual whiteboard if you have one, or to not use a whiteboard at all!</li>
+          <li>Choose "iPhone/iPad" to share work on an iPad (having an iPad is not required).</li>
+          <li>Some tips for sharing your screen:
+            <ul>
+              <li>To change what screen you're sharing, hover over the floating green bar with the meeting ID to bring up the menu and hit "New Share".</li>
+              <li>You can stop sharing your screen/whiteboard with the red "Stop Share" button.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>When you're ready to record, bring up the menu and (if you are screen sharing) press "More" then "Record on this computer" (or just "Record" and then "Record on this computer" if you're starting without screen sharing).</li>
+      <li>Once you're finished, hit the square Stop symbol to stop the recording, and then "End Meeting."</li>
+      <li>After ending the meeting, Zoom will save the recording and should automatically open up the folder where the file was saved (if not, go to "Documents/Zoom/[insert date of recording + name of Zoom meeting room]").</li>
+      <li>The saved mp4 file (which should be called zoom_0.mp4 or something similar) is the one you will upload with your section leader application.</li>
+      <li>For more information troubleshooting, see this support article from Zoom <a href="https://support.zoom.us/hc/en-us/articles/201362473-Local-Recording" target="_blank" rel="noopener noreferrer">https://support.zoom.us/hc/en-us/articles/201362473-Local-Recording</a>
+</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+
+
+</div>
+
+<style>
+    .body-container {
+        margin: 0 10%;
+        max-width: 55em;
+        width: 80%;
+    }
+    a.toc-link {
+      color: #aaa !important;
+      font-size: 90%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .fixed-top-right {
+        position: fixed;
+        margin-top: 0;
+        margin-left: 0;
+    }
+</style>
+
+</main>
+    <div class="footer navbar-default navbar-static-bottom">
+    <p style="font-size: 65%; color:green; text-align:center;">
+      <i>CS107e Winter 2021 · Site generated 2021-03-09 14:29</i>
+  </p>
+</div>
+  </body>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="/_assets/js/lightbox.js"></script>
+  <link rel="stylesheet" href="/_assets/style/lightbox.css">
+</html>
