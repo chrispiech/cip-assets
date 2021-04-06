@@ -5,7 +5,7 @@ honesty, and fairness.
 
 Below is an outline of practices that must be adhered to as a member of this community. Any violation of the Code in Place Code of Conduct, which may be amended from time to time, will result in removal from the program.
 
-**Do** report suspected violations of the Code of Conduct to the Code in Place team at [codeinplacestaff@gmailcom](mailto:codeinplacestaff@gmail.com).
+**Do** report suspected violations of the Code of Conduct to the Code in Place team at [codeinplacestaff@gmail.com](mailto:codeinplacestaff@gmail.com).
 
 ## Teaching
 
@@ -17,7 +17,7 @@ Each section leader is required to teach five 50-minute-long, once-a-week sectio
 
 **Do** participate in both section leader training workshops – both before and after your first section.
 
-**Do** email [codeinplacestaff@gmailcom](mailto:codeinplacestaff@gmail.com) as soon as possible if an unexpected circumstance comes up and you can’t make your section time.
+**Do** email [codeinplacestaff@gmail.com](mailto:codeinplacestaff@gmail.com) as soon as possible if an unexpected circumstance comes up and you can’t make your section time.
 
 ## Integrity
 
